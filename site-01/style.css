@@ -1,0 +1,358 @@
+.body {
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+.josefin-sans-custom {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto; /* Mantém o ajuste automático do tamanho óptico */
+    font-weight: 400; /* Substitua pelo peso desejado (ex.: 400, 700, etc.) */
+    font-style: normal; /* Ou "italic" se necessário */
+  }
+  
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: rgb(44, 44, 41); /* Cor de fundo do menu */
+    flex-wrap: wrap; /* Permite que o conteúdo quebre para outra linha */
+    
+}
+#txtBusca {
+    width: 200px; /* Largura do campo de busca */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remove a borda do campo de busca */
+}
+#btnBusca {
+    width: 30px; /* Largura da imagem */
+    height: 30px; /* Altura da imagem */
+  }
+/* Estilo padrão do campo de busca */
+.busca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Transição suave */
+    background-color: #bfaba1; /* Fundo visível */
+}
+
+/* Placeholder padrão */
+.busca::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto; /* Mantém o ajuste automático do tamanho óptico */
+    font-weight: 400; /* Substitua pelo peso desejado (ex.: 400, 700, etc.) */
+    font-style: normal; /* Ou "italic" se necessário */
+    color: transparent; /* Deixa o placeholder invisível por padrão */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Ao passar o mouse, o placeholder aparece */
+.busca:hover::placeholder {
+    color: #bfaba1; /* Cor do texto do placeholder ao passar o mouse */
+}
+
+/* Cor e estilo ao passar o mouse na caixa */
+.busca:hover {
+    background-color: #928680; /* Cor do fundo ao passar o mouse */
+    border: 1px solid black; /* Adiciona uma borda */
+}
+/* Customiza o botão "X" do campo de busca */
+.busca::-webkit-search-cancel-button {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none; /* Remove o estilo padrão do navegador */
+    width: 10px; /* Largura personalizada */
+    height: 10px; /* Altura personalizada */
+    background: url('/imagens/icon.png') no-repeat center; /* Substitui pelo seu ícone */
+    background-size: contain; /* Garante que o ícone se ajuste ao tamanho */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+}
+
+/* Estilo do botão ao passar o mouse */
+.busca::-webkit-search-cancel-button:hover {
+    background-color: #9c9898fd; /* Fundo claro ao passar o mouse */
+    border-radius: 0; /* Deixa o botão redondo */
+}
+
+.a {
+    color: #bfaba1;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Negrito */
+}
+.a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse */
+}
+.divspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espaçamento superior */
+    width: 100%; /* Garante que o elemento não ultrapasse a largura */
+    padding: 5px; /* Espaçamento interno */
+}
+.banner {
+     background-position: center;           /* Centraliza a imagem */
+    background-size: contain;              /* Mostra a imagem inteira, sem cortes */
+    background-repeat: no-repeat;          /* Evita repetir a imagem */
+    width: 100%;                           /* Ocupa toda a largura do container */
+    min-height: 250px;                     /* Altura mínima, ajuste conforme necessário */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.titulo1 {
+    font-size: 50px; /* Tamanho da fonte */
+    color: #bfaba1; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    background-color: rgb(44, 44, 41); /* Cor de fundo */
+    border-style: hidden; /* Estilo da borda */
+}
+.h2 { 
+    border: 0;
+    height: 2px; /* Altura da linha */
+    width: 20%; /* Largura da linha (preenche o elemento pai) */
+    background-image: linear-gradient(to right, transparent, #CCC, transparent); /* Gradiente da linha */
+    margin: 0 auto; /* Centraliza a linha no elemento pai */
+    margin-top: -15px; /* Espaçamento inferior */
+  }
+.tabela, .tabela1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Centraliza a tabela na tela */
+}
+
+.td-container {
+    perspective: 1000px; /* Define a perspectiva para o efeito 3D */
+    margin: 20px; /* Espaçamento entre os elementos */
+}
+.td-container 
+.front {
+    background-color: #ccbbba;
+}
+.td, .td1 {
+    width: 200px; /* Defina uma largura fixa para o card */
+    height: 200px; /* Defina uma altura fixa para o card */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-left: 40px; /* Espaçamento à esquerda */
+    margin-right: 40px; /* Espaçamento à direita */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Bordas arredondadas */
+    position: relative; /* Necessário para o comportamento 3D */
+    transform-style: preserve-3d; /* Ativa o efeito 3D */
+    transition: transform 1.0s ease; /* Transição suave */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f6edea;
+}
+.img1 {
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    margin-bottom: 0px; /* Espaçamento inferior */
+
+}
+.h3 {
+    font-size: 18px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
+}
+.a1 {
+    font-size: 15px; /* Tamanho da fonte */
+    margin-top: -50px; /* Espaçamento superior */
+    text-decoration: none; /* Remove o sublinhado */
+    color: black; /* Cor do texto */
+}
+.td:hover, .td1:hover {
+    transform: rotateY(180deg); /* Gira para mostrar o verso */
+}
+
+.td-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o lado não visível */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center;
+    border-radius: 50%; /* Mantém o estilo arredondado */
+    font-size: 15px;
+    color: black; /* Cor do texto */
+}
+
+.front {
+    background-color: #ddc7dd; /* Cor do lado da frente */
+    z-index: 2; /* Certifica-se de que a frente esteja acima */
+}
+
+.back {
+    background-color: #f6edea; /* Cor do lado de trás */
+    transform: rotateY(180deg); /* Posiciona o lado de trás */
+}
+.divcontat {
+    display: flex; /* Certifique-se de que é um contêiner flex */
+    flex-direction: column; /* Alinha os itens verticalmente */;
+    margin-top: 50px; /* Espaçamento superior */
+    width: 100%; /* Garante que o elemento não ultrapasse a largura */
+    background-color: #f6edea; /* Cor do lado de trás */
+    padding: 5px; /* Espaçamento interno */
+    gap: 20px; /* Espaçamento uniforme entre os itens */
+}
+
+.h2cont {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #bfaba1; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
+}
+.h3cont {
+    font-size: 18px; /* Tamanho da fonte */
+    color: #bfaba1; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Josefin Sans', sans-serif; /* Fonte personalizada */
+}
+.div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espaçamento superior */
+    width: 100%; /* Garante que o elemento não ultrapasse a largura */
+    background-color: #f6edea; /* Cor do lado de trás */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* CSS para botão flutuante do WhatsApp */
+
+.whatsapp-float {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 8px #888;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    padding: 10px;
+}
+
+.whatsapp-float:hover {
+    background: #bfaba1;
+}
+
+.whatsapp-float .imgwat {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+/* Estilo dos labels */
+label {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px; /* Espaçamento inferior entre os labels */
+    font-size: 15px;
+    color: #7a4e4e;
+    font-weight: 500;
+    margin-right : 10px; /* Espaçamento à esquerda */
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #f3d9d1;
+    border-radius: 8px;
+    margin-top: 0; /* Remova qualquer espaçamento superior */
+    margin-bottom: 10px; /* Adiciona espaçamento inferior entre os inputs */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #bfaba1;
+    color: rgb(90, 85, 85);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #bfaba1;
+    box-shadow: 0 0 5px rgba(232, 155, 140, 0.5);
+}
+/* Estilo do botão */
+button.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(90deg, #91837c, #bfaba1);
+    border: none;
+    border-radius: 50px; /* Bordas bem arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: -10px; /* Espaçamento superior entre o botão e os inputs */
+    margin-right: 20px; /* Espaçamento à direita */
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+/* Efeito de brilho ao passar o mouse */
+button.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+    transition: none;
+    z-index: 1;
+}
+
+button.btn:hover::before {
+    left: 100%;
+    transition: all 0.5s ease;
+}
+
+button.btn:hover {
+    background: linear-gradient(90deg, #928680, #928680); /* Inverte as cores do gradiente */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+/* Adiciona um leve brilho ao texto */
+button.btn {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+/* Efeito de clique */
+button.btn:active {
+    transform: scale(0.95); /* Diminui levemente o botão */
+    background: linear-gradient 90deg, #928680, #928680; /* Cor sólida durante o clique */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
