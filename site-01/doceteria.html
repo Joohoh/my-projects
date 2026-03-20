@@ -1,140 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doceteria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body class="body">
-
-    <div class="menu">
-        <a class="a" style="margin-left: 70px;" href="inicio.html" target="_self">Home</a>
-        <a class="a" href="catalogo.html" target="_self">Catálogo</a>
-        <a class="a" href="encomendas.html" target="_self">Encomendas</a>
-        <a class="a" href="historia.html" target="_self">Sobre nós</a>
-        <a class="a" href="contatos.html" target="_self">Contatos</a>
-        <input class="busca" type="search" id="txtBusca" placeholder="Busque o que procura aqui" />
-
-    </div>
-    <div class="divspace"> </div>
-        <div class="banner">
-            <div>
-                <img src="imagens/banner.png">
+    <!-- ===== MENU ===== -->
+    <header class="header">
+        <nav class="nav">
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="inicio.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="encomendas.html">Encomendas</a></li>
+                <li><a href="historia.html">Sobre nós</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+            <div class="nav__search">
+                <input class="nav__search-input" type="search" placeholder="Busque aqui...">
+                <img src="imagens/busca.png" alt="Buscar" class="nav__search-icon">
             </div>
-        </div>
-    </div>
-    <div>
-        <div class="divt">
-            <h2 class="titulo1">Linhas de Produtos</h2>
-        </div>
-        <div class="div1">
-            <table class="tabela">
-                <tr>
-                    <td class="td-container">
-                        <div class="td">
-                            <div class="td-content front">
-                                <img src="imagens/bolo.png" alt="Bolo" class="img1">
-                                <h3 class="h3">Bolo pequeno</h3>
-                                <p><a class="a1" href="Clique aqui para conhecer nossos produtos." class="p1">Conheça
-                                        nossos produtos.</a></p>
-                            </div>
-                            <div class="td-content back">
-                                <h3>Mais detalhes</h3>
-                                <p>Este é um bolo pequeno, ideal para ocasiões menores.</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="td-container">
-                        <div class="td">
-                            <div class="td-content front">
-                                <img src="imagens/bolo.png" alt="Bolo" class="img1">
-                                <h3 class="h3">Bolo médio</h3>
-                                <p><a class="a1" href="Clique aqui para conhecer nossos produtos." class="p1">Conheça
-                                        nossos produtos.</a></p>
-                            </div>
-                            <div class="td-content back">
-                                <h3>Mais detalhes</h3>
-                                <p>Este é um bolo médio, perfeito para festas e reuniões familiares.</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="td-container">
-                        <div class="td">
-                            <div class="td-content front">
-                                <img src="imagens/bolo.png" alt="Bolo" class="img1">
-                                <h3 class="h3">Bolo grande</h3>
-                                <p><a class="a1" href="Clique aqui para conhecer nossos produtos." class="p1">Conheça
-                                        nossos produtos.</a></p>
-                            </div>
-                            <div class="td-content back">
-                                <h3>Mais detalhes</h3>
-                                <p>Este é um bolo grande, ideal para grandes celebrações.</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="td-container">
-                        <div class="td1">
-                            <div class="td-content front">
-                                <img src="imagens/bolo.png" alt="Bolo" class="img1">
-                                <h3 class="h3">Bolo simples</h3>
-                                <p><a class="a1" href="Clique aqui para conhecer nossos produtos." class="p1">Conheça
-                                        nossos produtos.</a></p>
-                            </div>
-                            <div class="td-content back">
-                                <h3>Mais detalhes</h3>
-                                <p>Este é um bolo simples, com sabor clássico e delicioso.</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="td-container">
-                        <div class="td1">
-                            <div class="td-content front">
-                                <img src="imagens/bolo.png" alt="Bolo" class="img1">
-                                <h3 class="h3">Bolo estilizado</h3>
-                                <p><a class="a1" href="Clique aqui para conhecer nossos produtos." class="p1">Conheça
-                                        nossos produtos.</a></p>
-                            </div>
-                            <div class="td-content back">
-                                <h3>Mais detalhes</h3>
-                                <p>Este é um bolo estilizado, decorado para ocasiões especiais.</p>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="divcontat">
-            <h2 class="h2cont">Para receber atualizações de todas nossas novidades!</h2>
-        <div>
-            <h3 class="h3cont">
-                <em>Cadastre-se em nossa</em>
-                <span>Newsletter</span>
-            </h3>
-        </div>
-        <div class="div2">
-            <label>
-                <input id="name" type="text" pattern="^[a-zA-Z]+$"
-                    error-msg="Favor preencher apenas o primeiro nome contendo apenas letras." name="name" title="Nome"
-                    required="true" placeholder="Informe seu Nome">
-            </label>
-            <label>
-                <input id="email" type="email" name="email" title="Assine nossa newsletter" required="true"
-                    placeholder="Informe seu email">
-                <button type="submit" class="btn primary" id="newsletter-button"><span>Enviar</span>
-                </button>
-            </label>
-        </div>
-        </div>
-        <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-    <img src="imagens/whatsapp.png" alt="WhatsApp" class="imgwat">
-</a>
-</a>
+        </nav>
+    </header>
 
+    <!-- ===== BANNER ===== -->
+    <div class="banner-wrapper">
+        <section class="banner">
+            <img src="imagens/banner.png" alt="Banner Doceteria" class="banner__img">
+        </section>
+    </div>
+
+    <!-- ===== PRODUTOS ===== -->
+    <section class="produtos">
+        <h2 class="produtos__titulo">Linhas de Produtos</h2>
+
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo pequeno" class="card__img">
+                        <h3 class="card__nome">Bolo pequeno</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Ideal para ocasiões menores e encontros íntimos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo médio" class="card__img">
+                        <h3 class="card__nome">Bolo médio</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Perfeito para festas e reuniões familiares.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo grande" class="card__img">
+                        <h3 class="card__nome">Bolo grande</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Ideal para grandes celebrações e eventos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo simples" class="card__img">
+                        <h3 class="card__nome">Bolo simples</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Sabor clássico e delicioso para o dia a dia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo estilizado" class="card__img">
+                        <h3 class="card__nome">Bolo estilizado</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Decorado com arte para ocasiões especiais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front">
+                        <img src="imagens/bolo.png" alt="Bolo temático" class="card__img">
+                        <h3 class="card__nome">Bolo temático</h3>
+                        <a class="card__link" href="catalogo.html">Conheça nossos produtos.</a>
+                    </div>
+                    <div class="card__back">
+                        <h3>Mais detalhes</h3>
+                        <p>Personalizado com o tema da sua festa.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+        <h2 class="newsletter__titulo">Para receber atualizações de todas as nossas novidades!</h2>
+        <h3 class="newsletter__subtitulo">
+            <em>Cadastre-se em nossa</em> <span>Newsletter</span>
+        </h3>
+        <div class="newsletter__form">
+            <input type="text" name="name" placeholder="Informe seu Nome" required>
+            <input type="email" name="email" placeholder="Informe seu e-mail" required>
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p class="footer__text">
+            &copy; 2025 Doceteria
+            <span class="footer__sep">&middot;</span>
+            Projeto pessoal
+            <span class="footer__sep">&middot;</span>
+            J.M.B
+        </p>
+    </footer>
+
+    <!-- ===== WHATSAPP FLUTUANTE ===== -->
+    <a href="https://wa.me/SEUNUMERO" class="whatsapp" target="_blank" title="Fale conosco no WhatsApp">
+        <img src="imagens/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const links  = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('nav__links--open');
+            toggle.classList.toggle('nav__toggle--open');
+        });
+        links.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                links.classList.remove('nav__links--open');
+                toggle.classList.remove('nav__toggle--open');
+            });
+        });
+    </script>
+
+</body>
 </html>
