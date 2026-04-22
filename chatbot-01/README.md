@@ -2,6 +2,9 @@
 
 Bot do Telegram desenvolvido como trabalho acadêmico para consulta de clima atual, previsão e guias climáticos mensais do Brasil.
 
+## 🤖 Acesso ao Bot
+Para testar o bot, procure por **@ChuviscoClimaBot** no Telegram ou acesse: [t.me/ChuviscoClimaBot](https://t.me/ChuviscoClimaBot)
+
 ## 🛠️ Tecnologias e Ferramentas
 - **Linguagem:** Python 3.x
 - **Bibliotecas:** `python-telegram-bot` (Interface), `requests` (API), `Flask` (Health Check), `pypdf` (Leitura de dados), `python-dotenv`.
