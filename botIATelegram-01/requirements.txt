@@ -1,0 +1,10 @@
+pypdf
+langchain
+langchain-community
+langchain-google-genai
+langchain-chroma
+python-telegram-bot
+python-dotenv
+flask
+langchain-groq
+langchain-classic
