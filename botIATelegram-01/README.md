@@ -60,4 +60,4 @@ O bot roda em modo *Polling* no Telegram. No entanto, o plano grátis do **Rende
    - **Build Command:** `pip install -r requirements.txt`
    - **Start Command:** `python bot.py`
 4. Na aba **Environment Variables**, crie as variáveis `TELEGRAM_TOKEN`, `GOOGLE_API_KEY` e `GROQ_API_KEY` com suas respectivas chaves.
-5. Crie um job no [cron-job.org](https://cron-job.org) apontando para a URL que o Render gerar, rodando a cada 14 minutos.
+5. Crie um job no [cron-job.org](https://cron-job.org) apontando para a URL que o Render gerar, rodando a cada 14 minutos. 
